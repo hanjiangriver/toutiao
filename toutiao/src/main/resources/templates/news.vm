@@ -1,0 +1,47 @@
+<html>
+<body>
+<pre>
+
+
+fsdsafadf
+sdfsaf
+hello 张汉江
+
+fsfsdf
+
+${value3}
+
+$!{value2}
+$!{value1}
+
+
+
+#foreach($color in $colors)
+color $!{foreach.index}/$!{foreach.count}:$!{color}
+#end
+
+$!{value1}
+
+#foreach($key in $map.keySet())
+key $!{foreach.index}/$!{foreach.count}:$!{map.get($key)}
+#end
+
+
+$!{user.getName()}
+
+fgdssgdsgdf
+
+#set($title="newcoder")
+
+#parse("header.vm")
+
+#macro(render_color,$color,$index)
+  Color by macro $index,$color
+#end
+
+#foreach($color in $colors)
+  #render_color($color,$foreach.index)
+#end
+</pre>
+</body>
+</html>
